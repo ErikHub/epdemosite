@@ -1,0 +1,65 @@
+<!--Start with doctype HTML. It's an instruction to the browser so that the browser understands which version of HTML your webpage is written in.-->
+<!DOCTYPE html>
+
+
+<!--Open with an HTML Tag. This defines a container that holds all the HTML code you're going to write. This is a good moment to mention the need to close all of these tags, as HTML is a language of nested containers. -->
+<html>
+
+    <!-- There are two main sections of an HTML Document, the HEAD section and the BODY Section. The HEAD section defines items such as external links (like our reference sheet that tells the browser how things should look, and the title of the page. Here you can also set things like the little favicon icon on a webpage.-->
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/demosite.css"> <!--Here's our external CSS file. This connects our HTML page to that styleguide.-->
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" /> <!--I wanted to load an external font from Google web fonts here, to ensure that the font would display the same on any browser that viewed the site. This helps bypass the risk of using a font that someone may not have installed on their machines.-->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- I went back after the website was completed and linked to JQUERY, a Javascript library that's great for modifying HTML. Linking to JQUERY with the SCRIPT tag allows you to make use of that library either inline or in a separate Javascript file, which -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/demosite.js"></script>
+    </head>
+
+    <!--The BODY Section contains all the actual displayed content of the web page. The HEAD is invisible in the background. The content of a webpage is often made up of a series of dividers, called DIVs. The CSS file, or Cascading Style Sheet we linked earlier then applies certain rules to those dividers.--> 
+    <body>
+        <!--Here's our first DIV. Now we actually get to make something that we can show off!, But wait, it looks awful. That's because we need to go in and tell the CSS to target it somehow. <div>Here's our first DIV.</div>-->
+        
+            <!--The CSS rules know which sections or DIVS to target, and apply styling based off of their CLASSES and IDs. They're little identifiers that you add to DIVs and other elements. You'll see below that the div has the "photoOne" ID and the class "backgroundImages". IDs and Classes are case-sensitive.-->
+        <div id="photoOne" class="backgroundImages">
+            <div class="nameTitleWrapper">
+                <span class="nameTitle">ERIK PEARSALL</span>
+            </div>
+        </div>
+        
+        <div style="width:100%; height:0;">
+            <div id="workPlayBtn">Work Mode</div>
+        </div>
+            
+        <div class="informationBox">
+  <h3 style="text-align:center;">ABOUT ME</h3>
+  <p>This is a great space to talk about your interests, professional accomplishments, unique qualifications, or hobbies. We're finally making real content for the website! For example, Erik is a front end web developer who is interested in teaching. He likes camping and hiking and unfortunately none of these pictures are of him due to the need for awesome photography on short notice. You can also fill in other tidbits and things such as: He lives in North Carolina and used to perform IT consulting for the US House of Representatives. He also loves cheese.</p>
+</div>
+        <div id="photoTwo" class="backgroundImages">
+            <div class="nameTitleWrapper">
+                <span id="blurbTwo">Creative</span>
+            </div>
+        </div>
+        <div class="informationBox">
+  <h3 style="text-align:center;">CONNECT WITH ME</h3>
+        <p style="text-align:center;">
+            <a class="social" href="https://www.facebook.com"><span class="fa fa-facebook-square fa-4x"></span></a>
+            
+            <a class="social" href="https://www.twitter.com"><span class="fa fa-twitter-square fa-4x"></span></a> 
+            
+            <a class="social" href="https://www.linkedin.com"><span class="fa fa-linkedin-square fa-4x"></span></a> 
+            
+            <a class="social" href="mailto:info@erikpearsall.com"><span class="fa fa-envelope-square fa-4x"></span></a>
+        </p>
+</div>
+        <div id="photoThree" class="backgroundImages">
+            <div class="nameTitleWrapper">
+                <span id="blurbThree">Technologist</span>
+            </div>
+        </div>
+        <div class="informationBox copyright">
+  <p>Copyright 2016 Erik Pearsall, Demo for Instructional Presentation. Free Images from UNSPLASH. Lato Font from Google Webfonts. Icons from Font Awesome.</p>
+</div>
+    </body>
+
+
+</html>
